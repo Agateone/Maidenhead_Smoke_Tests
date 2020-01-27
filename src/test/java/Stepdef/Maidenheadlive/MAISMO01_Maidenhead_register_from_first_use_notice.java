@@ -39,8 +39,8 @@ public class MAISMO01_Maidenhead_register_from_first_use_notice {
 			Thread.sleep(6000);
 			Popbitch_First_Use_Notice_Elements popbitch_first_use_elements= new Popbitch_First_Use_Notice_Elements(driver);
 			popbitch_first_use_elements.Click_On_Popbitch_First_Use_Notice_Create_Wallet();
-			WebDriverWait wait = new WebDriverWait(driver, 20);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email")));	
+			Thread.sleep(6000);
+			
 			String reg_Page_url= driver.getCurrentUrl();
 			if(reg_Page_url.contains("https://account.agate.io/my-agate/sign-up?"))
 			{
