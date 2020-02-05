@@ -1,12 +1,8 @@
 package Stepdef.Maidenheadlive;
 
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -36,7 +32,7 @@ public class MAISMO01_Maidenhead_register_from_first_use_notice {
 			driver= new ChromeDriver();				
 			driver.get("https://www.maidenhead-advertiser.co.uk/news/remember-when/152676/remember-when-neighbours-star-draws-a-crowd-and-protests-over-m4-widening.html");
 			//driver.findElement(By.linkText("Ok")).click();
-			Thread.sleep(6000);
+			Thread.sleep(10000);
 			Popbitch_First_Use_Notice_Elements popbitch_first_use_elements= new Popbitch_First_Use_Notice_Elements(driver);
 			popbitch_first_use_elements.Click_On_Popbitch_First_Use_Notice_Create_Wallet();
 		    
